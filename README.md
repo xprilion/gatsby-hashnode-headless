@@ -12,6 +12,19 @@
 
 Dive into the world of modern web development with this Gatsby-Hashnode-Headless Blog Starter Kit. Built on Gatsby and TypeScript, this starter kit integrates seamlessly with Hashnode's Headless CMS, enabling developers to leverage Hashnode's blogging platform for content management while customizing the blog's frontend with Gatsby.
 
+## Features
+
+This starter kit comes with some amazing features -
+- Auto deploy from Hashnode CMS
+- Newsletter (third party)
+- Minimal theme
+- Deploy to any static site hosting - Github Pages, Netlify, S3, anything!
+- Great SEO score on Chrome Devtools
+- Generate Codelabs from markdown blogs
+- Generate presentations from markdown blogs
+- Publish the same file as a blog or a codelab or a presentation at one go!
+- Much more to come!
+
 ## 🚀 Quick Start Guide
 
 ### Creating Your Gatsby-Hashnode Blog
@@ -90,8 +103,7 @@ If it's a quick fix, such as a misspelled word or a broken link, feel free to sk
 
 ## 📚 Resources
 
-- **APIs and Custom Development**: Leverage Hashnode's public GraphQL APIs for advanced customizations.
-- **Support and Community**: Join the Hashnode community on Discord for discussions, support, and to connect with other bloggers.
-- **Feedback and Contributions**: Found an issue or have a suggestion? Open an issue on the GitHub repo or submit a pull request.
+- **APIs and Custom Development**: Leverage [Hashnode's public GraphQL APIs](https://gql.hashnode.com/) for advanced customizations.
+- **Support and Community**: Join the Hashnode community on [Discord](https://discord.gg/hashnode) for discussions, support, and to connect with other bloggers.
 
 Embark on your blogging journey with the Gatsby-Hashnode-Headless Blog Starter Kit, and unlock the full potential of modern web development for your blogging platform.
