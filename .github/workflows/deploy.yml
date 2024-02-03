@@ -1,0 +1,29 @@
+name: Deploy Gatsby Site
+
+on:
+  push:
+    branches:
+      - source 
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      run: yarn install
+
+    - name: Configure git
+      run: git config user.email "xprilion@gmail.com" && git config user.name "Anubhav Singh"
+
+    - name: Build and Deploy
+      run: yarn deploy:prod

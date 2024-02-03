@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap);
+
+ol,
+ol ol {
+    list-style-type: decimal
+}
+
+ol,
+table,
+ul {
+    margin-bottom: 1em
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 1.2rem;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    color: rgba(0, 0, 0, .8);
+    text-align: justify
+}
+
+code,
+pre {
+    font-size: 1rem !important;
+    white-space: pre-wrap !important;
+    white-space: -moz-pre-wrap !important;
+    white-space: -o-pre-wrap !important;
+    word-wrap: break-word !important;
+}
+
+code {
+    background: #f5f2f0;
+    color: #c92c2c;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 28px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 20px
+}
+
+ul {
+    list-style-type: disc
+}
+
+ol ol {
+    margin-left: 20px
+}
+
+ol ol ol {
+    list-style-type: lower-alpha
+}
+
+li {
+    margin-bottom: .5em
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: .5em;
+    text-align: left
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media screen and (max-width:768px) {
+
+    table,
+    tbody,
+    td,
+    th,
+    thead,
+    tr {
+        display: block
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px
+    }
+
+    tr {
+        margin-bottom: .5em;
+        border-bottom: 1px solid black;
+    }
+
+    td {
+        border: none;
+        position: relative;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-label)
+    }
+}
+
+blockquote {
+    border-bottom: 8px solid #bfbfbf;
+    background: #dedede;
+    padding: 1.5rem;
+    margin: 0 0 1.5rem;
+    font-size: x-large
+}
+
+blockquote p:last-child {
+    margin-bottom: 0
+}
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+ol,
+ul {
+    padding-left: 20px
+}
+
+#gatsby-focus-wrapper ol {
+    list-style: decimal;
+}
+
+
+#small-nav-menu {
+    position: absolute;
+    width: 90%;
+    margin-top: 0.5em;
+    right: 1em;
+    background: white;
+    padding: 5%;
+    box-shadow: 0px 0px 20px 0px #00000040;
+    z-index: 999;
+}
