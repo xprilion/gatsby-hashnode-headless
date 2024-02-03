@@ -1,8 +1,8 @@
 {
-  "name": "gatsbyblog",
+  "name": "gatsbyblog-hashnode-headless",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsbyblog",
+  "description": "A starter kit for building quickly with Hashnode-headless and Gatsby ",
   "author": "xprilion",
   "keywords": [
     "gatsby"

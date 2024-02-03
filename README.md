@@ -1,49 +1,97 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://hashnode.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress">
+      <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1611902473383/CDyAuTy75.png?auto=compress" height="128">
+    </picture>
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+  Gatsby + Hashnode Headless CMS Blog Starter
 </h1>
 
-## 🚀 Quick start
+Dive into the world of modern web development with this Gatsby-Hashnode-Headless Blog Starter Kit. Built on Gatsby and TypeScript, this starter kit integrates seamlessly with Hashnode's Headless CMS, enabling developers to leverage Hashnode's blogging platform for content management while customizing the blog's frontend with Gatsby.
 
-1.  **Create a Gatsby site.**
+## 🚀 Quick Start Guide
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+### Creating Your Gatsby-Hashnode Blog
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+1. **Initialize Your Gatsby Site**
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+   Clone the starter kit and install dependencies to set up your Gatsby site integrated with Hashnode's Headless CMS.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    # Clone the Gatsby-Hashnode-Headless starter kit
+    git clone https://github.com/xprilion/gatsby-hashnode-headless.git
+    cd gatsby-hashnode-headless/
+    yarn
     ```
 
-3.  **Open the code and start customizing!**
+2. **Start Developing**
 
-    Your site is now running at http://localhost:8000!
+   Launch your site's development server and begin crafting your blog.
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+    ```shell
+    yarn dev
+    ```
 
-4.  **Learn more**
+   Your blog is now running at `http://localhost:8000`! Navigate there to see your blog live. Edit `src/pages/index.tsx` to customize your site and watch updates in real-time.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+3. **Learn More**
 
-## 🚀 Quick start (Netlify)
+   Dive deeper into Gatsby and Hashnode to enhance your blog further:
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+    - [Gatsby Documentation](https://www.gatsbyjs.com/docs/)
+    - [Hashnode Headless CMS](https://hashnode.com/headless)
+    - [TypeScript in Gatsby](https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/)
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+### Deploying on GitHub Pages
+
+Prefer GitHub Pages for hosting? Follow these steps to deploy your Gatsby-Hashnode blog:
+
+1. **Prepare Your Site for GitHub Pages**
+
+   Adjust your `gatsby-config.js` to include the `pathPrefix` option set to your GitHub Pages URL segment (e.g., `/blog` for `username.github.io/blog`).
+
+    ```js
+    module.exports = {
+      // Other config options
+      pathPrefix: `/blog`, // Adjust based on your GitHub Pages URL
+    };
+    ```
+
+2. **Build Your Site**
+
+   Generate a production build of your site, considering the `pathPrefix`.
+
+    ```shell
+    yarn build -- --prefix-paths
+    ```
+
+3. **Deploy to GitHub Pages**
+
+   Use the `gh-pages` package to deploy your site to GitHub Pages.
+
+    ```shell
+    yarn add gh-pages --dev
+    yarn deploy
+    ```
+
+   This command will build your site and push the generated files to the `gh-pages` branch of your repository.
+
+Congratulations 🎉! You've successfully set up and deployed your Gatsby-Hashnode blog on GitHub Pages. Visit your GitHub Pages URL to see your blog live.
+
+## Found an issue?
+
+If you have found an issue or bug, please create an [issue](https://github.com/xprilion/gatsby-hashnode-headless/issues).
+
+If it's a quick fix, such as a misspelled word or a broken link, feel free to skip creating an issue. You can create a [pull request](https://github.com/xprilion/gatsby-hashnode-headless/pulls) directly.
+
+
+## 📚 Resources
+
+- **APIs and Custom Development**: Leverage Hashnode's public GraphQL APIs for advanced customizations.
+- **Support and Community**: Join the Hashnode community on Discord for discussions, support, and to connect with other bloggers.
+- **Feedback and Contributions**: Found an issue or have a suggestion? Open an issue on the GitHub repo or submit a pull request.
+
+Embark on your blogging journey with the Gatsby-Hashnode-Headless Blog Starter Kit, and unlock the full potential of modern web development for your blogging platform.
